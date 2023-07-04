@@ -1,0 +1,34 @@
+###### Place all generic definitions here ######
+
+# This defines tests which run tools of the same name.  This is simply for convenience to avoid
+# defining the test name twice (once in TOOL_ROOTS and again in TEST_ROOTS).
+# Tests defined here should not be defined in TOOL_ROOTS and TEST_ROOTS.
+TEST_TOOL_ROOTS := BackEndModeler 
+
+# This defines any static libraries (archives), that need to be built.
+LIB_ROOTS := 
+PIN_TOOL_CXXFLAGS := $(TOOL_CXXFLAGS) -I../shared 
+PIN_TOOL_CFLAGS := $(TOOL_CFLAGS) -I../shared
+
+OBJECT_ROOTS := Trace ShadowMemory PinLynxReg RegVector StringTable BackEndModelerAPI Helpers 
+TOOL_CXXFLAGS += -D_FILE_OFFSET_BITS=64 -std=c++0x -I../shared -DDATA_OPS 
+
+##############################################################
+#
+# Build rules
+#
+##############################################################
+
+# This section contains the build rules for all binaries that have special build rules.
+# See makefile.default.rules for the default build rules.
+
+$(OBJDIR)LynxReg$(OBJ_SUFFIX): ../shared/LynxReg.c ../shared/LynxReg.h
+	$(CC) $(PIN_TOOL_CFLAGS) $(COMP_OBJ)$@ $<
+
+$(OBJDIR)XedLynxReg$(OBJ_SUFFIX): ../shared/XedLynxReg.c ../shared/XedLynxReg.h
+	$(CC) $(PIN_TOOL_CFLAGS) $(COMP_OBJ)$@ $<
+	
+# Build the intermediate object file.
+
+$(OBJDIR)BackEndModeler$(PINTOOL_SUFFIX): $(OBJDIR)LynxReg$(OBJ_SUFFIX) $(OBJDIR)XedLynxReg$(OBJ_SUFFIX) $(OBJDIR)ShadowMemory$(OBJ_SUFFIX) $(OBJDIR)PinLynxReg$(OBJ_SUFFIX) $(OBJDIR)RegVector$(OBJ_SUFFIX) $(OBJDIR)Trace$(OBJ_SUFFIX) $(OBJDIR)BackEndModelerAPI$(OBJ_SUFFIX) $(OBJDIR)StringTable$(OBJ_SUFFIX) $(OBJDIR)Helpers$(OBJ_SUFFIX) $(OBJDIR)BackEndModeler$(OBJ_SUFFIX) 
+	$(LINKER) $(TOOL_LDFLAGS) $(LINK_EXE)$@ $^ $(TOOL_LPATHS) $(TOOL_LIBS)
