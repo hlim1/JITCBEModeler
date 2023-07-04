@@ -1,0 +1,15 @@
+[MAPINFO] name: legacy-map2 space: legacy legacyesc: 0x0F legacyopc: 0x38 mapid: 2 modrm: yes imm8: no imm32: no opcpos: 2 priority: 91 search_pattern: 0x0F 0x38
+[MAPINFO] name: legacy-map3 space: legacy legacyesc: 0x0F legacyopc: 0x3A mapid: 3 modrm: yes imm8: yes imm32: no opcpos: 2 priority: 91 search_pattern: 0x0F 0x3A
+[MAPINFO] name: amd-3dnow space: legacy legacyesc: 0x0F legacyopc: 0x0F mapid: AMD3DNOW modrm: yes imm8: yes imm32: no opcpos: -1 priority: 91 search_pattern: 0x0F 0x0F
+[MAPINFO] name: amd-xop8 space: xop legacyesc: N/A legacyopc: N/A mapid: 8 modrm: yes imm8: yes imm32: no opcpos: 1 priority: 95 search_pattern: XMAP8
+[MAPINFO] name: amd-xop9 space: xop legacyesc: N/A legacyopc: N/A mapid: 9 modrm: yes imm8: no imm32: no opcpos: 1 priority: 95 search_pattern: XMAP9
+[MAPINFO] name: amd-xopA space: xop legacyesc: N/A legacyopc: N/A mapid: 10 modrm: yes imm8: no imm32: yes opcpos: 1 priority: 95 search_pattern: XMAPA
+[MAPINFO] name: vex-map2 space: vex legacyesc: N/A legacyopc: N/A mapid: 2 modrm: yes imm8: no imm32: no opcpos: 1 priority: 95 search_pattern: V0F38
+[MAPINFO] name: vex-map3 space: vex legacyesc: N/A legacyopc: N/A mapid: 3 modrm: yes imm8: yes imm32: no opcpos: 1 priority: 95 search_pattern: V0F3A
+[MAPINFO] name: evex-map2 space: evex legacyesc: N/A legacyopc: N/A mapid: 2 modrm: yes imm8: no imm32: no opcpos: 1 priority: 95 search_pattern: V0F38
+[MAPINFO] name: evex-map3 space: evex legacyesc: N/A legacyopc: N/A mapid: 3 modrm: yes imm8: yes imm32: no opcpos: 1 priority: 95 search_pattern: V0F3A
+[MAPINFO] name: legacy-map1 space: legacy legacyesc: 0x0F legacyopc: N/A mapid: 1 modrm: var imm8: var imm32: no opcpos: 1 priority: 96 search_pattern: 0x0F
+[MAPINFO] name: vex-map1 space: vex legacyesc: N/A legacyopc: N/A mapid: 1 modrm: yes imm8: no imm32: no opcpos: 1 priority: 97 search_pattern: V0F
+[MAPINFO] name: evex-map1 space: evex legacyesc: N/A legacyopc: N/A mapid: 1 modrm: yes imm8: no imm32: no opcpos: 1 priority: 97 search_pattern: V0F
+[MAPINFO] name: legacy-map0 space: legacy legacyesc: N/A legacyopc: N/A mapid: 0 modrm: var imm8: var imm32: no opcpos: 0 priority: 100 search_pattern: 
+[WARNING] isa_set referenced by chip model hierarchy, but not used by any instructions: PREFETCHW

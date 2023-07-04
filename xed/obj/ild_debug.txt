@@ -1,0 +1,237 @@
+state_space:
+ {'REP': [0, 3, 2], 'DF64': [0, 1], 'REXR': [0, 1], 'ENCODER_PREFERRED': [1], 'VEXDEST3': [1], 'OSZ': [0, 1], 'VEXDEST4': [0], 'ASZ': [0, 1], 'BCAST': [21, 11, 4, 3, 8, 22, 10, 7, 1, 9, 26, 13, 2, 5, 25, 15, 20, 27, 6, 14, 16, 17, 19, 23, 12, 18, 24], 'MOD': [2, 1, 3, 0], 'VEX_PREFIX': [3, 2, 1, 0], 'SEG_OVD': [0, 3, 2, 4, 6, 1, 5], 'VL': [2, 1, 0, 3], 'EASZ': [1, 3, 2], 'NO_RETURN': [1], 'LOCK': [1, 0], 'SMODE': [2, 1, 0], 'REX': [1, 0], 'DEFAULT_SEG': [0, 2, 1], 'REXB': [0, 1], 'MAP': [8, 0, 10, 2, 1, 9, 3], 'REXX': [0, 1], 'REXW': [1, 0], 'MODE': [2, 1, 0], 'VEXDEST210': [7], 'REXRR': [0], 'EOSZ': [3, 1, 0, 2], 'DUMMY': [0], 'VEXVALID': [1, 4, 3, 2, 0]}EOSZ NTS:
+OSZ_NONTERM
+DF64
+FORCE64
+CR_WIDTH
+IGNORE66
+IMMUNE66_LOOP64
+REFINING66
+IMMUNE_REXW
+IMMUNE66
+
+EASZ NTS:
+ASZ_NONTERM
+
+IMMNTS:
+UIMMv
+UIMM16
+SIMM8
+SIMMz
+SE_IMM8
+UIMM8
+UIMM32
+
+DISP NTS:
+MEMDISPv
+MEMDISP16
+MEMDISP32
+SIB_BASE0
+MEMDISP
+MEMDISP8
+
+BRDISP NTS:
+BRDISPz
+BRDISP8
+BRDISP32
+
+NESTED NTS:
+YMM_R3
+GPRv_B
+ZMM_B3
+UISA_VSIB_ZMM
+GPRy_R
+YMM_N
+UISA_VMODRM_XMM
+YMM_B
+GPRz_B
+VGPRy_N
+FINAL_DSEG1
+ZMM_N3
+MASK_N
+MODRM64alt32
+VMODRM_YMM
+VGPR32_N
+MODRM16
+YMM_SE
+GPRz_R
+VMODRM_XMM
+FINAL_DSEG
+YMM_R
+XMM_B3
+UISA_VMODRM_ZMM
+SIB
+UISA_VSIB_YMM
+VGPR32_B
+VSIB_BASE
+FINAL_SSEG
+AVX_SPLITTER
+VSIB_YMM
+XMM_B
+VSIB_XMM
+A_GPR_R
+GPRv_SB
+SIB_BASE0
+VGPR32_R
+ZMM_R3
+UISA_VSIB_XMM
+UISA_VMODRM_YMM
+UISA_VSIB_BASE
+YMM_N3
+XMM_SE
+MODRM32
+GPRv_R
+YMM_B3
+MODRM
+A_GPR_B
+XMM_R
+EVEX_SPLITTER
+XMM_R3
+XMM_N
+GPRy_B
+XMM_N3
+ISA
+ALL_STATE_SPACE:
+REP: {0: True, 2: True, 3: True}
+ZEROING: {0: True, 1: True}
+WBNOINVD: {0: True, 1: True}
+REXR: {0: True, 1: True}
+MAP: {1: True, 2: True, 3: True, 8: True, 9: True, 10: True}
+SIBBASE: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+LLRC: {0: True, 1: True, 2: True, 3: True}
+OSZ: {0: True, 1: True}
+SIBSCALE: {0: True, 1: True, 2: True, 3: True}
+ASZ: {0: True, 1: True}
+MODEP5: {0: True, 1: True}
+CLDEMOTE: {0: True, 1: True}
+VEX_PREFIX: {0: True, 1: True, 2: True, 3: True}
+TZCNT: {0: True, 1: True}
+LZCNT: {0: True, 1: True}
+EASZ: {1: True, 2: True, 3: True}
+HINT: {0: True, 1: True, 2: True, 3: True, 4: True}
+REXB: {0: True, 1: True}
+BCRC: {0: True, 1: True}
+ESRC: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True, 8: True, 9: True, 10: True, 11: True, 12: True, 13: True, 14: True, 15: True}
+MODE: {0: True, 1: True, 2: True}
+REXRR: {0: True, 1: True}
+VEXVALID: {0: True, 1: True, 2: True, 3: True}
+CET: {0: True, 1: True}
+LOCK: {0: True, 1: True}
+ELEMENT_SIZE: {64: True, 1: True, 2: True, 4: True, 16: True, 32: True, 8: True, 128: True, 256: True, 512: True}
+REG: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+NEED_MEMDISP: {0: True, 8: True, 16: True, 32: True}
+VEXDEST3: {0: True, 1: True}
+SRM: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+MOD: {0: True, 1: True, 2: True, 3: True}
+SEG_OVD: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True}
+MASK: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+REX: {0: True, 1: True}
+EOSZ: {1: True, 2: True, 3: True}
+SMODE: {0: True, 1: True, 2: True}
+VEXDEST4: {0: True, 1: True}
+SIBINDEX: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+MODE_FIRST_PREFIX: {0: True, 1: True}
+REXX: {0: True, 1: True}
+MPXMODE: {0: True, 1: True}
+VEXDEST210: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+REXW: {0: True, 1: True}
+RM: {0: True, 1: True, 2: True, 3: True, 4: True, 5: True, 6: True, 7: True}
+P4: {0: True, 1: True}
+VL: {0: True, 1: True, 2: True, 3: True}
+ALL_OPS_WIDTHS:
+REP: 2
+ZEROING: 1
+WBNOINVD: 1
+REXR: 1
+MAP: 4
+SIBBASE: 3
+LLRC: 2
+OSZ: 1
+SIBSCALE: 2
+ASZ: 1
+MODEP5: 1
+REG: 3
+CLDEMOTE: 1
+VEX_PREFIX: 2
+TZCNT: 1
+UIMM0: 8
+LZCNT: 1
+EASZ: 2
+VEXDEST210_7: 1
+HINT: 3
+REXB: 1
+BCRC: 1
+ESRC: 4
+CET: 1
+MODE: 2
+LOCK: 1
+MODE_FIRST_PREFIX: 1
+VEXDEST210: 3
+NEED_MEMDISP: 6
+VEXDEST3: 1
+SRM: 3
+MASK_ZERO: 1
+RM4: 1
+MOD: 2
+MASK_NOT0: 1
+SEG_OVD: 3
+MASK: 3
+REX: 1
+EOSZ: 2
+SMODE: 2
+VEXDEST4: 1
+SIBINDEX: 3
+ELEMENT_SIZE: 9
+REXX: 1
+MPXMODE: 1
+VEXVALID: 3
+MOD3: 1
+REXRR: 1
+RM: 3
+VL: 2
+P4: 1
+REXW: 1
+incomplete opcode for iclass PUSH, pttrn 0b0101_0 SRM[rrr] DF64()
+incomplete opcode for iclass PUSH, pttrn 0b0101_0 SRM[rrr] DF64()
+Expanding opcode for PUSH
+incomplete opcode for iclass INC, pttrn 0b0100_0 SRM[rrr] not64
+incomplete opcode for iclass INC, pttrn 0b0100_0 SRM[rrr] not64
+Expanding opcode for INC
+incomplete opcode for iclass MOV, pttrn 0b1011_0 SRM[rrr] UIMM8()
+incomplete opcode for iclass MOV, pttrn 0b1011_0 SRM[rrr] UIMM8()
+Expanding opcode for MOV
+incomplete opcode for iclass MOV, pttrn 0b1011_1 SRM[rrr] UIMMv()
+incomplete opcode for iclass MOV, pttrn 0b1011_1 SRM[rrr] UIMMv()
+Expanding opcode for MOV
+incomplete opcode for iclass POP, pttrn 0b0101_1 SRM[rrr] DF64()
+incomplete opcode for iclass POP, pttrn 0b0101_1 SRM[rrr] DF64()
+Expanding opcode for POP
+incomplete opcode for iclass BSWAP, pttrn 0x0F 0b1100_1 SRM[rrr]
+incomplete opcode for iclass BSWAP, pttrn 0x0F 0b1100_1 SRM[rrr]
+Expanding opcode for BSWAP
+incomplete opcode for iclass NOP, pttrn 0b1001_0 SRM[0b000] SRM=0  not_refining_f3 norexb_prefix
+incomplete opcode for iclass NOP, pttrn 0b1001_0 SRM[0b000] SRM=0  not_refining_f3 norexb_prefix
+incomplete opcode for iclass NOP, pttrn 0b1001_0 SRM[0b000] SRM=0  refining_f3 P4=0
+incomplete opcode for iclass NOP, pttrn 0b1001_0 SRM[0b000] SRM=0  refining_f3 P4=0
+incomplete opcode for iclass XCHG, pttrn 0b1001_0 SRM[rrr] SRM!=0
+incomplete opcode for iclass XCHG, pttrn 0b1001_0 SRM[rrr] SRM!=0
+Expanding opcode for XCHG
+incomplete opcode for iclass XCHG, pttrn 0b1001_0 SRM[rrr] SRM=0 not_refining_f3 rexb_prefix
+incomplete opcode for iclass XCHG, pttrn 0b1001_0 SRM[rrr] SRM=0 not_refining_f3 rexb_prefix
+Expanding opcode for XCHG
+incomplete opcode for iclass DEC, pttrn 0b0100_1 SRM[rrr] not64
+incomplete opcode for iclass DEC, pttrn 0b0100_1 SRM[rrr] not64
+Expanding opcode for DEC
+incomplete opcode for iclass PAUSE, pttrn 0b1001_0 SRM[0b000] SRM=0  refining_f3 P4=1
+incomplete opcode for iclass PAUSE, pttrn 0b1001_0 SRM[0b000] SRM=0  refining_f3 P4=1
+EOSZ SEQS: [['OSZ_NONTERM', 'IMMUNE_REXW'], ['OSZ_NONTERM', 'FORCE64'], ['OSZ_NONTERM'], ['OSZ_NONTERM', 'REFINING66', 'CR_WIDTH'], ['OSZ_NONTERM', 'DF64', 'FORCE64'], ['OSZ_NONTERM', 'CR_WIDTH'], ['OSZ_NONTERM', 'REFINING66'], ['OSZ_NONTERM', 'DF64', 'IMMUNE66_LOOP64'], ['OSZ_NONTERM', 'IGNORE66'], ['OSZ_NONTERM', 'DF64'], ['OSZ_NONTERM', 'IMMUNE66']]
+EASZ SEQS: [['ASZ_NONTERM']]
+IMM SEQS: [['UIMM16', 'UIMM8_1'], ['UIMM8'], ['UIMMv'], ['SE_IMM8'], ['UIMM32'], ['UIMM16'], [], ['UIMM8', 'UIMM8_1'], ['SIMM8'], ['SIMMz']]
+DISP SEQS: [['BRDISP32'], ['BRDISPz'], ['MEMDISPv'], [], ['BRDISP8']]
+DISP NTs: ['MEMDISPv']
+BRDISP NTs: ['BRDISPz', 'BRDISP8', 'BRDISP32']
+vv0 cnames: {'REP', 'WBNOINVD', 'SRM', 'OSZ', 'MODEP5', 'MOD', 'CLDEMOTE', 'TZCNT', 'LZCNT', 'EASZ', 'REXB', 'MPXMODE', 'MODE', 'REG', 'MOD3', 'CET', 'LOCK', 'RM', 'P4', 'REXW'}
+vv1 cnames: {'EASZ', 'VEXDEST210_7', 'VL', 'VEXDEST3', 'RM4', 'MODE', 'REG', 'MOD3', 'VEX_PREFIX', 'REXW'}
+vv2 cnames: {'EASZ', 'VEXDEST210_7', 'ZEROING', 'VEXDEST4', 'VL', 'VEXDEST3', 'MASK_ZERO', 'BCRC', 'RM4', 'MODE', 'REXRR', 'MOD3', 'REG', 'VEX_PREFIX', 'REXW'}
+vv3 cnames: {'VEXDEST210_7', 'VL', 'VEXDEST3', 'MODE', 'REG', 'MOD3', 'VEX_PREFIX', 'REXW'}
+all cnames: {'REP', 'ZEROING', 'WBNOINVD', 'VEXDEST3', 'SRM', 'MASK_ZERO', 'OSZ', 'RM4', 'MODEP5', 'MOD', 'CLDEMOTE', 'VEX_PREFIX', 'TZCNT', 'LZCNT', 'EASZ', 'VEXDEST210_7', 'VL', 'VEXDEST4', 'REXB', 'BCRC', 'MPXMODE', 'MODE', 'REG', 'MOD3', 'CET', 'REXRR', 'LOCK', 'RM', 'P4', 'REXW'}
